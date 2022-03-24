@@ -2,6 +2,9 @@
 
 二维码生成模块
 
+```shell
+Install-Package Jc.QRCode
+```
 # 生成二维码
 
 实例化
