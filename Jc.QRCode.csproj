@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>.netstandard2.1</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.2</PackageVersion>
+        <Title>Jc.QRCode</Title>
+        <Authors>JackerKun</Authors>
+        <Description>qr code class</Description>
+        <Copyright>JackerKun</Copyright>
+        <PackageProjectUrl>http://jackerkun.com</PackageProjectUrl>
+        <PackageLicenseUrl>http://jackerkun.com</PackageLicenseUrl>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\.netstandard2.1\Jc.QRCode.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\.netstandard2.1\Jc.QRCode.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SkiaSharp" Version="2.80.3" />
+      <PackageReference Include="ZXing.Net" Version="0.16.8" />
+    </ItemGroup>
+
+</Project>
