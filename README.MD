@@ -3,7 +3,7 @@
 二维码生成模块
 
 ```shell
-Install-Package Jc.QRCode
+dotnet add package  Jc.QRCode
 ```
 # 生成二维码
 
